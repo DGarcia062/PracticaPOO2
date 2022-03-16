@@ -393,7 +393,8 @@ namespace PracticaPOO
                 }
 
                 while (seleccion == "3")
-                {
+                {                  
+
                     Console.WriteLine("Ingresaste al módulo de ventas\n");
 
                     Console.WriteLine("Ingresa la cédula del cliente: ");
@@ -424,57 +425,16 @@ namespace PracticaPOO
                         foreach (var i in servicioProducto.listaProductos)
                         {
                             Console.WriteLine($"Producto: {i.Nombre} - Cantidad: {i.Cantidad}");
-                          
-                        }
-
-                        foreach (var f in servicioProducto.listaProductos)
-                        {
-                            Console.WriteLine("Ingresa el nombre del producto que deseas llevar");
-
-                            var seleccionProducto = Console.ReadLine();
-
-                            if (seleccionProducto == f.Nombre)
-                            {
-                                Console.WriteLine($"Seleccionaste el producto: {f.Nombre}");
-
-                                Console.WriteLine("¿Cuántas unidades deseas llevar?");
-
-                                double seleccionCantidad = int.Parse(Console.ReadLine());
-
-                                if (seleccionCantidad <= f.Cantidad)
-                                {
-                                    Console.WriteLine($"Seleccionaste {seleccionCantidad} del producto:     {seleccionProducto}");
-
-                                    Console.WriteLine("¿Deseas seleccionar otro producto? 1 - Sí 2 - No");
-
-                                    var seleccionProducto_ = Console.ReadLine();
-
-                                    if (seleccionProducto_ != "1")
-                                    {
-                                        Console.WriteLine("Hasta luego");                                       
-                                        break;
-                                    }                                    
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Existencias insuficientes");
-                                }
-                            }
-
-                            
-                        }
-                        
-
-
-
-                        
-
-                        
-
-
-
+                        }                                                                                       
                     }                 
-                    
+
+
+
+
+
+
+
+                  
             }
             if (seleccion == "6")
             {
